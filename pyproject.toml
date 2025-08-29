@@ -1,5 +1,5 @@
 [project]
-name = "dw-mcp-server"
+name = "iflow-mcp_dw-mcp-server"
 version = "0.1.0"
 description = "语音转文字 MCP 服务器 - 支持多种音频格式和识别引擎"
 readme = "README.md"
@@ -12,6 +12,9 @@ dependencies = [
     "uvicorn>=0.24.0",
     "pydantic>=2.0.0",
 ]
+
+[project.scripts]
+dw-mcp-server = "main:main"
 
 [project.optional-dependencies]
 dev = [
